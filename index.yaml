@@ -3,6 +3,16 @@ entries:
   eirini:
   - apiVersion: v1
     appVersion: 0.3.0
+    created: "2020-05-19T17:02:37.491402314Z"
+    description: A Helm chart for Cloud Foundry/Eirini
+    digest: 0bda6289949cc9b46a4aaeb4a91cc9c3f56fc4333d69ab28bb0d87365e3dd741
+    icon: https://raw.githubusercontent.com/cloudfoundry-incubator/eirini-release/develop/assets/images/eirini-icon.png
+    name: eirini
+    urls:
+    - https://github.com/SUSE/eirini-release/releases/download/eirini-1.0.5/eirini-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v1
+    appVersion: 0.3.0
     created: "2020-05-05T19:30:29.456512213Z"
     description: A Helm chart for Cloud Foundry/Eirini
     digest: a3e493f630cc2d60bdbc9a5c825846af1e6f5d8adcb6cf23d4987e7dea360dec
