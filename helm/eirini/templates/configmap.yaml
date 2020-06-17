@@ -18,7 +18,8 @@ data:
       registry_address: "registry.{{ index .Values.kube.external_ips 0 }}.nip.io:6666"
       {{- end }}
       registry_secret_name: {{ .Values.opi.registry_secret_name }}
-      eirini_address: "https://eirini-opi.{{ .Release.Namespace }}.svc.cluster.local:8085"
+      {{- $default_eirini_address := printf "https://eirini-opi.%s.svc:8085" .Release.Namespace }}
+      eirini_address: {{ default $default_eirini_address .Values.opi.eirini_address }}
 
       {{- if .Values.opi.staging.downloader_image }}
       downloader_image: "{{ .Values.opi.staging.downloader_image }}:{{ .Values.opi.staging.downloader_image_tag }}"
